@@ -1,9 +1,19 @@
 # selfie-booth
-This was nodejs project. which takes photos from usb camera and sent to email.
+This was nodejs project. which takes photos from usb camera and sent to email or can be downloaded with qr code.
+its is similar to photobooth
+
+![alt text](https://github.com/nandubangari/selfie-booth/blob/master/Screenshots/scr-2.jpg)
+
+![alt text](https://github.com/nandubangari/selfie-booth/blob/master/Screenshots/scr-4.jpg)
+
+![alt text](https://github.com/nandubangari/selfie-booth/blob/master/Screenshots/scr-5.jpg)
 
 # Running Application
-$ git clone https://github.com/nandubangari/selfie-booth.git # or clone your own fork
+$ git clone https://github.com/nandubangari/selfie-booth.git
+
 $ cd node-js-getting-started
+
 $ npm install
+
 $ npm start
 
