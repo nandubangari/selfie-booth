@@ -6,7 +6,7 @@ its is similar to photobooth
 
 ![alt text](https://github.com/nandubangari/selfie-booth/blob/master/Screenshots/scr-4.jpg)
 
-![alt text](https://github.com/nandubangari/selfie-booth/blob/master/Screenshots/scr-5.jpg)
+![alt text](https://github.com/nandubangari/selfie-booth/blob/master/Screenshots/scr5.jpg)
 
 # Running Application
 $ git clone https://github.com/nandubangari/selfie-booth.git
