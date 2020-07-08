@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Settings</title>
+    <link href="../css/admin.css" rel="stylesheet" media="all">
+</head>
+<body>
+    <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      }
+    .flip-card {
+      background-color: transparent;
+      perspective: 1000px;
+    }
+    .flip-card-inner {
+      position: relative;
+      background-color: #bbb;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+    .flip-card-inner {
+    }
+    .flip-card-front, .flip-card-back, .flip-card-backing {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+    .flip-card-front {
+      background-color: #2980b9;
+      color: black;
+    }
+    .flip-card-back,.flip-card-backing {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+    }
+  </style>
+  <script type="text/javascript">
+    function open_notification() 
+    {
+      var el=document.getElementById("flip-card-inner")
+      el.style.transform="rotateY(180deg)";   
+    }
+    function open_notificationb() 
+    {
+      document.getElementById("flip-card").className += "click";
+      var el=document.getElementById("flip-card-inner")
+      el.style.transform="";   
+    }
+  </script>
+    <div class="page-wrapper bg-gra-01 p-t-180 p-b-100 font-poppins">
+        <div class="wrapper wrapper--w780">
+            <div class="card card-3">
+                <div class="card-heading"></div>
+                <div class="card-body">
+                    <div class="flip-card" id="flip-card">
+                    <div id="flip-card-inner" class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h2 class="title">Admin</h2>
+                       <div class="p-t-10">
+                        </div>
+                        <div class="p-t-10">
+                        	<p  style="padding-bottom: 10px;color: white">Email:
+                        		<span id="pemail" style="padding-bottom: 10px;color: white"></span></p>
+                        	<p  style="padding-bottom: 10px;color: white">Password:
+                        		<span id="ppass" style="padding-bottom: 10px;color: white"></span></p>
+                            <button class="btn btn--pill btn--green" onclick="open_notification()">Edit</button>
+                            <a href="login.html"><button class="btn btn--pill btn--green" type="submit">Done</button></a>
+                        </div>
+                    </div>
+                <div class="flip-card-back">
+                  <h2 class="title">Edit</h2>
+                         <div class="input-group">
+                            <input class="input--style-3" type="email" placeholder="Email" id="Email">
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-3" type="password" placeholder="Enter email password" id="EmailPass">
+                        </div>
+                      		<img id="loading" src="" ></img>
+                          <p id="warn" style="padding-bottom: 10px;color: red"></p>
+                         <div class="p-t-10">
+                              <button class="btn btn--pill btn--green" onclick="open_notificationb()">Discard</button>
+                            <button class="btn btn--pill btn--green" onclick="saveEmail()">Save</button>
+                        </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/settings.js"></script>
+    <script type="text/javascript">
+    	config();
+    </script>
+
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+</html>
+<!-- end document-->

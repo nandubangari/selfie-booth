@@ -1,0 +1,26 @@
+{
+  "name": "PhotoBooth",
+  "version": "1.0.0",
+  "description": "Project",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Cse 4th years SVCET",
+  "devDependencies": {
+    "electron": "^8.0.1"
+  },
+  "dependencies": {
+    "serve-handler": "^6.1.2",
+    "crypto": "^1.0.1",
+    "custom-env": "^2.0.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "http-server": "^0.12.1",
+    "jquery": "^3.4.1",
+    "ngrok": "^3.2.7",
+    "nodemailer": "^6.4.2",
+    "zip-a-folder": "0.0.12"
+  }
+}

@@ -1,0 +1,19 @@
+<html lang=”en”>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/camera.css">
+    <script src="../js/jquery-3.4.1.js"></script>
+    <title>PhotBooth</title>
+</head>
+<body>
+    <main id="camera">
+        <canvas id="camera--sensor"></canvas>
+        <video id="camera--view" autoplay playsinline></video>
+        <img src=""  id="camera--output">
+        <button id="send" onclick="sendto()" >Send images</button>
+    </main>
+    <script src="../js/camera.js"></script>
+</body>
+</html>

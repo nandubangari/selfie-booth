@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin:400,500,700|Montserrat:400,500,700');
+@import 'css/bootstrap.min.css';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Cabin', sans-serif;
+    background-color: #fff;
+}
+
+.wellcome_area {
+    background-image: url(../img/welcome-bg.png);
+    height: 500px;
+    position: relative;
+    z-index: 1;
+    background-position: bottom center;
+    background-size: cover;
+
+
+}
+
+.get-start-area .email {
+    background: #9572e8;
+    height: 50px;
+    width: 260px;
+    max-width: 360px;
+    border: none;
+    border-radius: 24px;
+    padding: 0px 15px;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 20px;
+    
+}
+
+.form-control::-webkit-input-placeholder {
+    color: #cec1f4;
+    opacity: 1;
+
+}
+
+.form-control:-ms-input-placeholder {
+    color: #cec1f4;
+    opacity: 1;
+
+}
+
+.form-control::-ms-input-placeholder {
+    color: #cec1f4;
+    opacity: 1;
+
+}
+
+.form-control::placeholder {
+    color: #cec1f4;
+    opacity: 1;
+
+}
+
+.get-start-area .email:focus {
+    border: none;
+    outline-offset: transparent !important;
+    border-radius: 30px;
+}
+
+.get-start-area .submit {
+    background-color: #fb397d;
+    color: #fff;
+    font-weight: 500;
+    display: inline-block;
+    border: none;
+    height: 50px;
+    min-width: 167px;
+    line-height: 46px;
+    text-align: center;
+    border-radius: 24px 24px 24px 0px;
+
+}
+
+.get-start-area .submit:hover {
+    background: #6f52e5;
+    color: #fff;
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+
+
+
+.sidenav a {
+  position: absolute;
+  left: -80px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+.sidenav a:hover {
+  left: 0;
+}
+
+.qrcodes {
+  top: 20px;
+  background-color: #4CAF50;
+
+}
+
+.mails {
+  top: 80px;
+  background-color: #2196F3;
+}
+
+.whatsapps {
+  top: 140px;
+  background-color: #f44336;
+}
+
+.container {
+   margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color:white;
+
+}
+
+.qrco {
+ 
+  height: 100%;
+}
+.qr{
+ 
+}
+
+.complete{
+    width: 200px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    border-radius: 30px;
+    border: none;
+    padding: 15px 20px;
+    text-align: center;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+    position: fixed;
+    bottom: 30px;
+    left: calc(50% - 100px);
+}

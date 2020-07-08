@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>QR</title>
+    <link href="../css/qr.css" rel="stylesheet">
+    <script src="../js/easy.qrcode.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/ngrlocal.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/delete.all.photos.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/zip.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+     	function totalbla()
+     	{
+     	var result = confirm("It will delete everything..");
+    if (result == true) {
+    	if(deleteAllImg())
+    	{
+    window.location.href = "camera.html";
+    } 
+}
+    }
+     </script>
+
+   </head>
+
+<body >
+    <section class="wellcome_area clearfix" id="home">
+    <div id="mySidenav" class="sidenav">
+      <a href="qr.html" id="qrcode" class= "qrcodes">qr code</a>
+      <a href="mail.html" id="mail" class = "mails" >Mail</a>
+      <a href="gallery.html" id="whatsapp" class = "whatsapps">Back</a>
+    </div>
+
+<div id="qrco" class="qrco" >
+        
+      <div id="container" class="container"></div>>
+      <script type="text/template" id="qrcodeTpl">
+      <div class="imgblock">
+        <div class="title">{title}</div>
+        <div class="qr" id="qrcode_{i}"></div>
+      </div>
+    </script>
+     <button id="complete" class="complete" onclick="totalbla()" >Done</button>
+    </div>
+    </section>
+</body>
+</html>
+
+
+		<script type="text/javascript">
+		tunnel();
+		function callback( url){
+			var demoParams = [
+				{
+					title: "",
+					config: {
+						
+						text: url,
+						width: 240, // Widht
+						height: 240, // Height
+						colorDark: "#000000", // Dark color
+						colorLight: "#ffffff", // Light color
+                        quietZone: 15,
+                        quietZoneColor: '#00CED1',
+						logo: "", // LOGO
+						//					logo:"http://127.0.0.1:8020/easy-qrcodejs/demo/logo.png",  
+						//					logoWidth:80, 
+						//					logoHeight:80,
+						logoBackgroundColor: '#ffffff', // Logo backgroud color, Invalid when `logBgTransparent` is true; default is '#ffffff'
+						logoBackgroundTransparent: false, // Whether use transparent image, default is false
+
+
+						correctLevel: QRCode.CorrectLevel.H // L, M, Q, H
+
+					}
+
+				}
+					
+			]
+
+
+
+			var qrcodeTpl = document.getElementById("qrcodeTpl").innerHTML;
+			var container = document.getElementById('container');
+
+			for (var i = 0; i < demoParams.length; i++) {
+				var qrcodeHTML = qrcodeTpl.replace(/\{title\}/, demoParams[i].title).replace(/{i}/, i);
+				container.innerHTML+=qrcodeHTML;
+			}
+			for (var i = 0; i < demoParams.length; i++) {
+				 var t=new QRCode(document.getElementById("qrcode_"+i), demoParams[i].config);
+			}
+		
+			
+			}
+			
+		</script>

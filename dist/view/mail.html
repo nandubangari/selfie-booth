@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Maile</title>
+    <link href="../css/mail.css" rel="stylesheet">
+    <script src="../js/mail.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/delete.all.photos.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="../css/keybord.css">
+    <link rel="stylesheet" href="../css/jsKeyboard.css" type="text/css" media="screen"/>
+<script type="text/javascript">
+ async function totalbla()
+      {
+      var result = confirm("It will delete everything..");
+    if (result == true) {
+      if(await deleteAllImg())
+         window.location.href = "camera.html";
+   
+}
+}
+</script>
+        <script src="../js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+     <style>
+</style>
+
+</head>
+
+<body>
+   
+    <section class="wellcome_area" id="home">
+      <div id="mySidenav" class="sidenav">
+      <a href="qr.html" id="qrcode" class= "qrcodes">qr code</a>
+      <a href="mail.html" id="mail" class = "mails" >Mail</a>
+      <a href="camera.html"  class = "whatsapps">Back</a>
+      <button id="complete" class="complete" onclick="totalbla()" >Done</button>
+    </div>
+      <div class="get-start-area">
+          
+              <input type="text" id="data" class="form-control email" placeholder="Enter Email">
+             
+              <input type="submit" class="submit" value="Send" onclick="sendMail()" >
+              <img id="myImage"  src="" style=" margin-top: 40px" >
+       
+        <div id="virtualKeyboard"></div>
+        
+        </div> <!-- /container -->
+
+        <script src="../js/jquery-1.9.1.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../js/jsKeyboard.js"></script>
+         <script type="text/javascript" src="../js/main.js"></script>
+   
+        
+
+        <script>
+            var _gaq=[['_setAccount','UA-11577561-5'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+           
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+                  
+        </div>
+    </section>
+</body>
+</html>

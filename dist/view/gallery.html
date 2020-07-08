@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Gallery</title>
+        <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+        <script src="../js/jquery-3.4.1.js" type="text/javascript"></script>
+        <script src="../js/gallery.conn.src.js" type="text/javascript"></script> 
+        <script src="../js/jquery.mousewheel.min.js"></script>
+        <link href="../css/gallery.css" rel="stylesheet">      
+    </head>
+    <body class="home">
+        <div class="demo-gallery">
+            <ul id="lightgallery" class="list-unstyled row"></ul>
+        </div>
+        <script type="text/javascript">
+          addimges(gallery);
+          function gallery(){
+            $(document).ready(function(){
+            $('#lightgallery').lightGallery();
+          });
+          }
+        </script>
+        <script src="../js/editor.js"></script>
+        <script src="../js/gallery.js"></script>
+    </body>
+</html>
