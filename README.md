@@ -9,9 +9,10 @@ its is similar to photobooth
 ![alt text](https://github.com/nandubangari/selfie-booth/blob/master/Screenshots/scr5.jpg)
 
 # Running Application
+Make sure you have Node.js
 $ git clone https://github.com/nandubangari/selfie-booth.git
 
-$ cd node-js-getting-started
+$ cd selfie-booth
 
 $ npm install
 
